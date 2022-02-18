@@ -1,7 +1,5 @@
 import { GetStaticProps } from 'next';
-
 import { getPrismicClient } from '../services/prismic';
-
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
 
@@ -24,13 +22,22 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+export default function Home(): JSX.Element {
+  return (
+    <>
+      <main className={styles.main}>
+        <div className={commonStyles.container}>
+          <div className={commonStyles.content}>
+            <h1>Olá</h1>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
 
 // export const getStaticProps = async () => {
 //   // const prismic = getPrismicClient();
 //   // const postsResponse = await prismic.query(TODO);
-
-//   // TODO
+//   return console.log('postsResponse');
 // };
