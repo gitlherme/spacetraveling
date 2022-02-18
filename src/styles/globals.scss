@@ -11,3 +11,15 @@
   --info: #BBBBBB;
   --body: #D7D7D7;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+p, span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: var(--heading);
+}

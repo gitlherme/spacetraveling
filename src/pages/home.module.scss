@@ -1,4 +1,36 @@
 .main {
   background-color: var(--background);
   height: 100vh;
+
+  .posts {
+    .post {
+      h2 {
+        line-height: 2rem;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        a {
+          color: var(--heading);
+          text-decoration: none;
+          transition: color 0.2s;
+          &:hover {
+            color: var(--highlight);
+          }
+        }
+      }
+      p {
+        line-height: 1.2rem;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        color: var(--body);
+      }
+
+      span {
+        color: var(--info);
+      }
+      .information {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
 }
