@@ -1,36 +1,45 @@
-.main {
-  background-color: var(--background);
-  height: 100vh;
-
-  .posts {
-    .post {
-      h2 {
-        line-height: 2rem;
-        font-size: 1.5rem;
-        padding: 0.5rem 0;
-        a {
-          color: var(--heading);
-          text-decoration: none;
-          transition: color 0.2s;
-          &:hover {
-            color: var(--highlight);
-          }
+.posts {
+  .post {
+    h2 {
+      line-height: 2rem;
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      a {
+        color: var(--heading);
+        text-decoration: none;
+        transition: color 0.2s;
+        &:hover {
+          color: var(--highlight);
         }
       }
-      p {
-        line-height: 1.2rem;
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        color: var(--body);
-      }
+    }
+    p {
+      line-height: 1.2rem;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      color: var(--body);
+    }
 
-      span {
-        color: var(--info);
-      }
-      .information {
-        display: flex;
-        gap: 2rem;
-      }
+    span {
+      color: var(--info);
     }
   }
+}
+
+.pagination {
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--highlight);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
+  margin: 2rem 0 0;
 }
