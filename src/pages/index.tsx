@@ -32,9 +32,11 @@ interface HomeProps {
 export default function Home({ postsPagination }: HomeProps): JSX.Element {
   const [posts, setPosts] = useState(postsPagination.results);
   async function fetchPosts(): Promise<void> {
-    await fetch(postsPagination.next_page)
-      .then(res => res.json())
-      .then(res => setPosts([...posts, ...res.results]));
+    if (postsPagination.next_page !== null) {
+      await fetch(postsPagination.next_page)
+        .then(res => res.json())
+        .then(res => setPosts([...posts, ...res.results]));
+    }
   }
   return (
     <>
